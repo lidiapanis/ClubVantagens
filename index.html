@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cineart Club</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <link rel="stylesheet" href="css/estilo.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+</head>
+<body>
+  <section id="app">
+    <header>
+      <div class="header-conteudo  limitar-box">
+        <a href="#beneficios"><img id="logo" src="assets/1 1logo.png"></a>
+        <nav>
+          <div>
+            <div class="nav-mobile">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+              </div>
+          <a class="link" href="#beneficios">Beneficios</a>
+          <a class="link" href="#pontuar">Como Pontuar</a>
+          <a class="link" href="#regulamento">Regulamento</a>
+          <a class="linkcadastro" href="veloxtickets.com">Login/Cadastre-se</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div id="beneficios" class="box-sobre limitar-box">
+        <h2>Veja como é fácil e rápido participar:</h2>
+        <div id="basico">
+        <a href="https://www.veloxtickets.com/Authenticate/P-cineart/Cadastre-se?ReturnUrl=https%3A%2F%2Ffidelidade.veloxtickets.com%2Fcineart%2Ffidelidade%2FCINEART" target="_blank"><img class="basicoimg" src="assets/cadastro.png"></a>
+        <img class="basicoimg" src="assets/pontue.png">
+        <img class="basicoimg" src="assets/felizaniversario.png">
+        <img class="basicoimg" src="assets/beneficios.png">
+          </div>
+          </div>
+      <div id="pontuar" class="box-sobre limitar-box">
+        <h2>Como eu posso pontuar?</h2>
+        <ul class="lista-proc">
+          <li v-for="procedimentos in colecaoProcedimentos" class="box-proc">
+            <div class="box-proc-img">
+              <img src="assets/icon.png"/>
+            </div>
+
+            <div class="box-proc-descricao">
+              <h3>{{ procedimentos.nome }}</h3>
+
+              <p>{{ procedimentos.descricao }}</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div id="niveis" class="box-depoimentos limitar-box">
+        <h2>Suba de nível </h2>
+
+        <ul class="lista-depoimentos" >
+          <li v-for="depoimento in colecaoNiveis" class="box-depoimento">
+            <div class="box-depoimento-img">
+              <img src="assets/icon-cliente.png"/>
+            </div>
+
+            <h3>{{ depoimento.nivel }}</h3>
+            <p>{{ depoimento.descricao }}</p>
+          </li>
+        </ul>
+      </div>
+
+      <div id="regulamento" class="box-sobre limitar-box">
+        <h2>Duvidas frequentes</h2>
+        <p><a href="https://fidelidade.veloxtickets.com/cineart/sobre/CINEART">Clique aqui </a>e consulte o regulamento do clube de beneficios</p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footerGeral">
+      <div class="contato">
+      <a href="https://www.veloxtickets.com/Parceiro/P-CINEART/Atendimento/Ajuda-e-Contato"><img class="icons" src="assets/icon_mail.png"> </a>
+      <p>Fale Conosco</p>
+      <a href="https://www.cineart.com.br/"><img class="icons" src="assets/icon_internet.png"></a>
+      <p>Ir para o site da Cineart</p>
+      </div>
+      <div class="sociais">
+      <a href="https://apps.apple.com/br/app/cineart/id1540094252"><img class="icons" src="assets/icon_apple.png"></a><a href="https://play.google.com/store/search?q=cineart&c=apps"><img class="icons" src="assets/icon_google.png"> </a>
+      <p>Baixe nosso aplicativo</p>
+      <a href="https://pt-br.facebook.com/pg/cinemas.cineart/posts/"><img class="icons" src="assets/icon_facebook.png"></a> <a href="https://www.instagram.com/cineart_oficial/"><img class="icons" src="assets/icon_instagram.png"> </a> 
+      <p>Siga-nos em nossas redes sociais</p>
+      </div>
+    </div>
+    <p>© Copyright - {{ nomeEmpresa }}</p>
+    </footer>
+  </section>
+
+  <script src="app/script.js"></script>
+</body>
+</html>

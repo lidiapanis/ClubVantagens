@@ -1,0 +1,259 @@
+* {
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .limitar-box {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  iframe {
+    width: 100%;
+  }
+  
+  /* Topo */
+  header {
+    height: 70px;
+    width: 100%;
+    box-shadow: 0 0 6px rgb(0 0 0 / 16%);
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+  }
+  
+  .header-conteudo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+    flex: 1;
+  }
+  
+  .header-conteudo h1 {
+    margin: 0;
+    flex: 1 1 auto;
+    padding: 10px ;
+    color: #3a3333;
+  }
+  
+  .link {
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #3a3333;
+  }
+  
+  .link:hover {
+    border-bottom: 2px solid;
+  }
+
+  .linkcadastro {
+    color: #fff;
+    background-color: #0E5E98;
+    padding: 10px;
+    border-radius: 80px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .linkcadastro:hover {
+    background-color: #619bc5;
+  }
+
+  .nav-mobile{
+    cursor: pointer;
+    display: none;
+  }
+
+  .nav-mobile div{
+    width: 32px;
+    height: 2px;
+    background-color: #000;
+    margin: 8px;
+  }
+  
+  /* Conteúdo */
+  main {
+    margin-bottom: 20px;
+  }
+
+  .basico {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #basico .basicoimg{
+    max-width: 100%;
+    padding:20px;
+
+  }
+
+  #logo{
+    height: 50px;
+    padding-right: 50px;
+  }
+  .lista-proc {
+    margin: 0 auto;
+    padding-top:20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .box-sobre, .box-proc, .box-depoimentos, .box-contato {
+    text-align: center;
+    padding-top: 70px;
+  }
+  
+  .box-sobre h2, .box-proc h2, .box-depoimentos h2 {
+    color: #3a3333;
+    font-size: 32px;
+    font-weight: 500;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  
+  
+  .box-proc {
+    background-color: #0E5E98;
+    color: #fff;
+    max-width: 300px;
+    border-radius: 15px;
+    padding: 10px;
+    padding-left: 15px;
+    margin: 5px 5px 25px 10px;
+    box-shadow: 1px 1px 15px #1c2d4070;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .box-proc-img, .box-depoimento-img {
+    position: absolute;
+    top: -20px;
+    left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .box-proc-img img, .box-depoimento-img img {
+    width: 40px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 7px rgb(0 0 0 / 17%);
+  }
+  
+  .box-proc-descricao {
+    flex: 1 1 auto;
+  }
+  
+  .box-proc-dose {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  
+  .lista-depoimentos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .box-depoimento {
+    background-color: #fff;
+    width: 300px;
+    border-radius: 15px;
+    padding: 10px;
+    padding-left: 15px;
+    margin: 5px 5px 25px 10px;
+    box-shadow: 1px 1px 15px #1c2d4070;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .box-depoimento h3{color: #3a3333;}
+  
+  
+  /* Rodapé */
+  footer {
+    background-color:#0E5E98;
+    color:#fff;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 6px rgb(0 0 0 / 16%);
+    font-weight: 600;
+  }
+
+  .footerGeral{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  
+
+  }
+  .icons{
+    height: 40px;
+    width: auto;
+    padding: 4px;
+  }
+  
+  @media (max-width: 450px) {
+
+    header h1 { 
+      display: none;
+    }
+
+    nav { 
+      position: absolute; 
+      top: 8vh; 
+      right: 0; 
+      width: 50vw; 
+      height: 92vh;
+      flex-direction: column; 
+      align-items: center; 
+      justify-content: space-around;
+      background: #0E5E98;
+      transform: translateX(100%);
+    }    
+
+    .link, .linkcadastro {
+      color: #fff; 
+    }
+    .nav-mobile{display: block;}
+    .box-proc, .box-depoimento { width:100%; max-width: 100%; margin: 10px 15px 30px;}
+    .basicoimg {max-width: 100%; margin-left: 5px; margin-right: 5px;}
+    #logo {margin-left: 10px;}
+    .box-sobre h2, .box-proc h2, .box-depoimentos h2 {color: #3a3333; font-size: 20px; font-weight: 500; font-weight: 600; text-transform: uppercase; margin: 10px;}
+    .box-sobre p {margin: 10px;}
+    .footerGeral {flex-direction: column;}
+    .icons { margin: 0px; padding: 2px;}
+
+  }
