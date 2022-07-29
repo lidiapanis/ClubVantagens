@@ -241,7 +241,7 @@
   .icons{
     height: 40px;
     width: auto;
-    padding: 4px;
+    padding: 8px;
   }
   
   @media (max-width: 450px) {
@@ -274,7 +274,7 @@
     .box-sobre p, .box-reg p {margin: 10px;}
     .footerGeral {flex-direction: column;}
     .footerGeral div, .footerGeral p{ margin: 0px;align-items: center;justify-content: center; padding: 7px;}
-    .icons { margin: 0px; padding: 2px;}
+    .icons { margin: 0px; padding: 8px;}
     .box-reg{
       text-align: center;
       color: #fff;
