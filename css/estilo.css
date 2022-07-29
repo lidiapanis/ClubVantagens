@@ -120,9 +120,13 @@
     justify-content: space-around;
   }
   
-  .box-sobre, .box-proc, .box-depoimentos, .box-contato {
+  .box-proc, .box-depoimentos, .box-reg {
     text-align: center;
-    padding-top: 70px;
+  }
+
+  .box-sobre {
+    text-align: center;
+    padding-top: 50px;
   }
   
   .box-sobre h2, .box-proc h2, .box-depoimentos h2, .box-reg h2 {
@@ -131,7 +135,7 @@
     font-weight: 500;
     font-weight: 600;
     text-transform: uppercase;
-    margin-bottom: 30px;
+
   }
 
   .box-proc {
@@ -186,7 +190,7 @@
     width: 300px;
     border-radius: 15px;
     padding: 10px;
-    padding-left: 15px;
+    padding-left: 5px;
     margin: 5px 5px 25px 10px;
     box-shadow: 1px 1px 15px #1c2d4070;
     display: flex;
@@ -198,7 +202,6 @@
   
   .box-reg{
   text-align: center;
-  padding-top: 70px;
   color: #fff;
   text-decoration: none;
 }
@@ -272,5 +275,14 @@
     .footerGeral {flex-direction: column;}
     .footerGeral div, .footerGeral p{ margin: 0px;align-items: center;justify-content: center; padding: 7px;}
     .icons { margin: 0px; padding: 2px;}
-
+    .box-reg{
+      text-align: center;
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    .box-reg a:visited{
+      text-decoration: none;
+      color: #fff;
+    }
   }
