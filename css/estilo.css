@@ -120,16 +120,17 @@
     justify-content: space-around;
   }
   
-  .box-proc, .box-depoimentos, .box-reg {
+  .box-proc, .box-depoimentos, .box-reg, .box-sobre {
     text-align: center;
   }
 
-  .box-sobre {
+  .box-beneficios {
     text-align: center;
     padding-top: 50px;
+    color: #fff;
   }
   
-  .box-sobre h2, .box-proc h2, .box-depoimentos h2, .box-reg h2 {
+  .box-sobre h2, .box-proc h2, .box-depoimentos h2, .box-reg h2, .box-beneficios h2 {
     color: #fff;
     font-size: 32px;
     font-weight: 500;
@@ -267,10 +268,11 @@
       color: #fff; 
     }
     .nav-mobile{display: block;}
-    .box-proc, .box-depoimento { width:100%; max-width: 100%; margin: 10px 15px 30px;}
+    .box-proc, .box-depoimento, .box-sobre {max-width: 100%; margin-left: 10px; margin-right: 10px;}
+    .box-beneficios {max-width: 100%; margin-left: 10px; margin-right: 10px; margin-top: 10px;}
     .basicoimg {max-width: 100%; margin-left: 5px; margin-right: 5px;}
-    #logo {margin-left: 10px;}
-    .box-sobre h2, .box-proc h2, .box-depoimentos h2, .box-reg h2 {color: #fff; font-size: 20px; font-weight: 500; font-weight: 600; text-transform: uppercase; margin: 10px;}
+     #logo { margin-left: 10px;}
+    .box-sobre h2, .box-proc h2, .box-depoimentos h2, .box-reg h2, .box-beneficios h2 {color: #fff; font-size: 20px; font-weight: 500; font-weight: 600; text-transform: uppercase;}
     .box-sobre p, .box-reg p {margin: 10px;}
     .footerGeral {flex-direction: column;}
     .footerGeral div, .footerGeral p{ margin: 0px;align-items: center;justify-content: center; padding: 7px;}
@@ -284,5 +286,11 @@
     .box-reg a:visited{
       text-decoration: none;
       color: #fff;
+    }
+    
+    #basico .basicoimg{
+      max-width: 100%;
+      padding:10px;
+  
     }
   }
