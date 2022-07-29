@@ -18,7 +18,9 @@
   ul {
     margin: 0;
     padding: 0;
-    list-style: none;
+    list-style:inside;
+    padding: 10px;
+    text-align: left;
   }
 
   
@@ -174,6 +176,11 @@
     justify-content: space-around;
     flex-wrap: wrap;
   }
+
+  .lista-depoimentos h3{
+    text-align: center;
+  }
+
   .box-depoimento {
     background-color: #fff;
     width: 300px;
