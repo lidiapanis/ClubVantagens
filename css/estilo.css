@@ -218,7 +218,7 @@
     align-items: center;
     justify-content:center;
     margin: 20px;
-    padding: 20px;;
+    padding: 20px;
   }
 
   .footerGeral div{
@@ -260,9 +260,10 @@
     .box-proc, .box-depoimento { width:100%; max-width: 100%; margin: 10px 15px 30px;}
     .basicoimg {max-width: 100%; margin-left: 5px; margin-right: 5px;}
     #logo {margin-left: 10px;}
-    .box-sobre h2, .box-proc h2, .box-depoimentos h2 {color: #3a3333; font-size: 20px; font-weight: 500; font-weight: 600; text-transform: uppercase; margin: 10px;}
-    .box-sobre p {margin: 10px;}
+    .box-sobre h2, .box-proc h2, .box-depoimentos h2, .box-reg h2 {color: #fff; font-size: 20px; font-weight: 500; font-weight: 600; text-transform: uppercase; margin: 10px;}
+    .box-sobre p, .box-reg p {margin: 10px;}
     .footerGeral {flex-direction: column;}
+    .footerGeral div, .footerGeral p{ margin: 0px;align-items: center;justify-content: center; padding: 7px;}
     .icons { margin: 0px; padding: 2px;}
 
   }
